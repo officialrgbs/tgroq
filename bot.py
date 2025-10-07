@@ -2,6 +2,9 @@ import os
 import requests
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Load environment variables
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
